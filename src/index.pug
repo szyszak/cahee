@@ -1,0 +1,148 @@
+doctype html
+html
+  head(lang="en")
+
+    meta(charset="UTF-8")
+    title Weekly Webdev Challenge no 2
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    //- link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css")
+    link(rel="stylesheet" href="styles.css")
+
+  body
+    nav.navbar
+      h1.brand Cahee
+
+      ul.nav-menu
+        li.active
+          a(href="#home") HOME
+        li
+          a(href="#about") ABOUT
+        li
+          a(href="#services") SERVICES
+        li
+          a(href="#gallery") GALLERY
+        li
+          a(href="#subscribe") SUBSCRIBE
+        li
+          a(href="#blog") BLOG
+        li
+          a(href="#contact") CONTACT
+
+      .nav-toggle MENU
+
+    main.wrapper
+      section.home#home
+        .home-col
+          h1.main-header Fresh Life
+          p.home-paragraph Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          button.btn.home-btn GET FREE NOW
+
+        img(src="img/scroll.png" alt="" aria-hidden="true").scroll
+
+      section.about#about
+        .about-col
+          img(src="img/about_img.png").about-img
+
+        .about-col
+          h2.about-header About Us
+          p.about-paragraph Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+          p.about-paragraph Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+
+      section.services#services
+        .services-col
+          ul.services-list
+            li.service
+              p Online Shopping
+              span.icon
+                img(src="img/icon_cart.png")
+            li.service
+              p Quality Product
+              span.icon
+                img(src="img/icon_hand.png")
+            li.service
+              p Domestic & International Delivery
+              span.icon
+                img(src="img/icon_globe.png")
+            li.service
+              p Well Organized
+              span.icon
+                img(src="img/icon_carrot.png")
+
+        .services-col.bg-img
+          h2.services-header Our Services
+
+      section.gallery#gallery
+        h2.gallery-header Gallery
+        p.gallery-paragraph Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        .gallery-row
+          .col-8
+            img(src="img/gal1.png").photo
+          .col-4
+            img(src="img/gal2.png").photo
+            img(src="img/gal3.png").photo
+        .gallery-row
+          .col-6
+            img(src="img/gal4.png").photo
+          .col-6
+            img(src="img/gal5.png").photo
+
+        button.btn.gallery-btn VIEW MORE
+
+      section.subscribe#subscribe
+        .subscribe-col
+          h2.subscribe-header Subscribe To Us
+          p.subscribe-paragraph Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+          form.subscribe-form
+            input(type="email" placeholder="Your email address...")
+            button(type="submit").btn.subscribe-btn SUBSCRIBE
+
+      section.blog#blog
+        h2.blog-header Blog
+        p.blog-paragraph Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+
+        .posts
+          .post#post-1
+            span.date 20 NOV
+            .gradient
+              h3.post-header Green Smoothies: Too Much of a Good Thing?
+              p.author By Auskeex - 2 hours ago
+          .post#post-2
+            span.date 14 NOV
+            .gradient
+              h3.post-header Groving Food and a "Thirst" for Innovation
+              p.author By Auskeex - 3 hours ago
+          .post#post-3
+            span.date 10 NOV
+            .gradient
+              h3.post-header Pesticides and Food: What You Need to Know
+              p.author By Auskeex - 6 hours ago
+
+        button.btn.blog-btn VIEW MORE
+
+      section.contact#contact
+        h2.contact-header Contact
+        p.contact-paragraph For new projects, ideas, business or anything you'd like to discuss, contact with me!
+
+        .contact-row
+          form.contact-form
+            input(type="text" placeholder="Your name...")
+            input(type="email" placeholder="Your email...")
+            input(type="tel" placeholder="Your phone number...")
+            textarea(placeholder="Your message...")
+
+          address
+            h3 ADDRESS
+            p 123 City name, Street, City, Country
+            h3 EMAIL
+            p cahee@domain.com
+            h3 PHONE
+            p +012 345 6789
+
+    footer
+      p © 2015 Company. All Rights Reserved.
+      h4 Cahee
+      p Based on PSD by Auskteez
+
+    script(src="scripts.js")

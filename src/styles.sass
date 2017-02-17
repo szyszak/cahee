@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900')
+
+=shadow
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5)
+
+=clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: Raleway
+
+.navbar
+  height: 100px
+  width: 100%
+  background-color: rgba(255, 255, 255, 0.3)
+  position: fixed
+  top: 0
+  z-index: 1
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+.brand
+  font-family: Pacifico
+  font-size: 50px
+  color: #262626
+
+.nav-toggle
+  display: none
+  font-size: 24px
+  font-weight: 700
+
+.nav-menu
+  list-style: none
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+  li
+    margin: 0 20px
+    padding-top: 10px
+
+    a
+      font-size: 16px
+      font-weight: 700
+      text-decoration: none
+      color: #262626
+
+  .active
+    border-top: 3px solid #ff6033
+
+.wrapper
+  width: 100%
+  max-width: 1920px
+
+.btn
+  height: 55px
+  border: none
+  padding: 0 26px
+  font-family: Raleway
+  font-size: 20px
+  font-weight: 300
+  +shadow
+
+.home
+  background-image: url("img/home_img.jpg")
+  background-position: center center
+  padding-top: 360px
+  padding-bottom: 70px
+  padding-left: 170px
+
+  .home-col
+    max-width: 400px
+    height: 240px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: baseline
+
+  .main-header
+    font-weight: 900
+    font-size: 60px
+    color: #262626
+
+  .home-paragraph
+    font-size: 17px
+    font-weight: 300
+
+  .home-btn
+    background-color: #ff6033
+    color: #ffffff
+
+  .scroll
+    display: block
+    margin: auto
+    margin-top: 280px
+
+.about
+  background-color: #00b1b1
+  display: flex
+  justify-content: space-around
+  align-items: center
+  padding: 100px 0
+
+  .about-col
+    max-width: 500px
+
+  // .about-img
+    // max-width: 100%
+
+  .about-header
+    font-size: 90px
+    font-weight: 700
+    color: #ffffff
+
+  .about-paragraph
+    margin-bottom: 30px
+    font-size: 17px
+    font-weight: 300
+    color: #ffffff
+
+.services
+  background-color: #70bfff
+  display: flex
+  justify-content: center
+  padding: 160px 0
+
+  .services-col
+    height: 480px
+    width: 40%
+    display: flex
+    justify-content: center
+
+  .bg-img
+    display: flex
+    margin-bottom: 60px
+    justify-content: center
+    align-items: center
+    background-image: url("img/services_img.png")
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: contain
+
+  .services-list
+    list-style: none
+
+  .service
+    height: 100px
+    width: 400px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    margin-bottom: 20px
+    background-color: #ffffff
+    font-size: 20px
+    font-weight: 700
+    +shadow
+
+  p
+    width: 300px
+
+  .icon
+    height: 100px
+    width: 100px
+    border-left: 1px solid #9d9d9d
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 0
+    right: 0
+
+  .services-header
+    font-size: 90px
+    font-weight: 700
+    color: #ffffff
+
+.gallery
+  background-color: #ffe92f
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 100px 0 120px 0
+
+  .gallery-row
+    max-width: 1170px
+    display: flex
+    justify-content: space-between
+
+  .col-4
+    width: 33.333333%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    margin: 15px
+    +clearfix
+
+  .col-6
+    width: 50%
+    margin: 15px
+    +clearfix
+
+  .col-8
+    width: 66.666666%
+    margin: 15px
+    +clearfix
+
+  .gallery-header
+    font-size: 90px
+    font-weight: 700
+    color: #262626
+
+  .gallery-paragraph
+    margin: 50px 0
+    text-align: center
+    max-width: 570px
+    font-size: 17px
+    font-weight: 300
+    color: #262626
+
+  .photo
+    width: 100%
+    +shadow
+
+  .gallery-btn
+    margin-top: 50px
+    background-color: #5585a2
+    color: #ffffff
+
+.subscribe
+  padding: 150px 0
+  background-image: url("img/subscribe_img.jpg")
+  background-repeat: no-repeat
+  background-position: right center
+
+  .subscribe-col
+    margin-left: 170px
+
+  .subscribe-header
+    font-size: 40px
+    font-weight: 700
+    margin-bottom: 40px
+    color: #262626
+
+  .subscribe-paragraph
+    font-size: 17px
+    font-weight: 300
+    max-width: 35%
+    margin-bottom: 40px
+    color: #262626
+
+  .subscribe-form
+
+  input
+    height: 60px
+    width: 100%
+    max-width: 570px
+    padding-left: 20px
+    font-size: 16px
+    border: 1px solid #262626
+
+  .subscribe-btn
+    margin-left: 30px
+    background-color: #96b92c
+    color: #ffffff
+
+.blog
+  display: flex
+  align-items: center
+  flex-direction: column
+  padding: 100px 0 120px 0
+  background-color: #b07cf7
+  text-align: center
+
+  .blog-header
+    margin-bottom: 60px
+    font-size: 90px
+    font-weight: 700
+    color: #ffffff
+
+  .blog-paragraph
+    max-width: 600px
+    margin: auto
+    margin-bottom: 50px
+    font-size: 17px
+    font-weight: 300
+    color: #ffffff
+
+  .posts
+    max-width: 1170px
+    // margin: auto
+    display: flex
+    justify-content: space-between
+
+  .post
+    position: relative
+    margin: 30px
+    width: 370px
+    height: 310px
+    background-repeat: no-repeat
+    color: #ffffff
+    +shadow
+
+  #post-1
+    background-image: url("img/post_1.jpg")
+
+  #post-2
+    background-image: url("img/post_2.jpg")
+
+  #post-3
+    background-image: url("img/post_3.jpg")
+
+  .date
+    display: block
+    margin: 30px
+    margin-bottom: 120px
+    font-size: 24px
+    font-weight: 700
+    height: 60px
+    width: 60px
+    border-radius: 5px
+    background-color: rgba(0, 0, 0, 0.5)
+
+  .gradient
+    position: absolute
+    padding-top: 80px
+    background: linear-gradient(to top, #000000, transparent)
+    bottom: 0
+    left: 0
+    right: 0
+
+
+  .post-header
+    margin: 10px
+    text-align: left
+
+  .author
+    margin: 10px
+    text-align: left
+
+  .blog-btn
+    margin-top: 50px
+    background-color: #f72b3b
+    color: #ffffff
+
+.contact
+  padding: 120px 0 100px 0
+  text-align: center
+  background-image: url("img/contact_img.jpg")
+  background-position: center center
+  background-size: cover
+
+  .contact-header
+    font-size: 90px
+    font-weight: 700
+    color: #262626
+    margin-bottom: 50px
+
+  .contact-paragraph
+    max-width: 500px
+    margin: auto
+    font-size: 17px
+    font-weight: 300
+    color: #414141
+    margin-bottom: 50px
+
+  .contact-form
+    width: 100%
+    max-width: 500px
+    display: flex
+    flex-direction: column
+
+
+    input
+      height: 50px
+      margin-bottom: 20px
+
+    textarea
+      height: 250px
+      padding-top: 20px
+
+    input,
+    textarea
+      width: 100%
+      background-color: rgba(0, 196, 196, 0.5)
+      font-family: Raleway
+      padding-left: 25px
+      border: none
+      font-size: 15px
+      font-weight: 300
+      color: #ffffff
+
+      &:focus
+        border-left: 5px solid #355b82
+        padding-left: 20px
+        background-color: #00c4c4
+        font-weight: 700
+
+  .contact-row
+    display: flex
+    justify-content: space-around
+
+  address
+    font-style: normal
+    max-width: 500px
+    text-align: left
+
+    h3
+      font-size: 17px
+      font-weight: 700
+      margin-bottom: 10px
+
+    p
+      font-size: 20px
+      margin-bottom: 20px
+
+footer
+  display: flex
+  padding: 30px 0
+  justify-content: space-around
+  align-items: center
+  background-color: #262626
+  color: #b9b9b9
+
+  h4
+    font-family: Pacifico
+    font-size: 25px
+    font-weight: 400
+
+  p
+    font-size: 16px
+    font-weight: 300
+
+// @import "animations"
+@import "media"

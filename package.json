@@ -1,0 +1,23 @@
+{
+  "name": "weekly_psd_2",
+  "version": "1.1.0",
+  "description": "weekly web developer challenge psd no 2",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "szyszak",
+  "license": "MIT",
+  "devDependencies": {
+    "beepbeep": "^1.2.0",
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "keywords": [
+    "PSD"
+  ]
+}

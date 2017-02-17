@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>Weekly Webdev Challenge no 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="brand">Cahee</h1>
+      <ul class="nav-menu">
+        <li class="active"><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#subscribe">SUBSCRIBE</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <div class="nav-toggle">MENU</div>
+    </nav>
+    <main class="wrapper">
+      <section class="home" id="home">
+        <div class="home-col">
+          <h1 class="main-header">Fresh Life</h1>
+          <p class="home-paragraph">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <button class="btn home-btn">GET FREE NOW</button>
+        </div><img class="scroll" src="img/scroll.png" alt="" aria-hidden="true">
+      </section>
+      <section class="about" id="about">
+        <div class="about-col"><img class="about-img" src="img/about_img.png"></div>
+        <div class="about-col">
+          <h2 class="about-header">About Us</h2>
+          <p class="about-paragraph">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+          <p class="about-paragraph">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="services-col">
+          <ul class="services-list">
+            <li class="service">
+              <p>Online Shopping</p><span class="icon"><img src="img/icon_cart.png"></span>
+            </li>
+            <li class="service">
+              <p>Quality Product</p><span class="icon"><img src="img/icon_hand.png"></span>
+            </li>
+            <li class="service">
+              <p>Domestic & International Delivery</p><span class="icon"><img src="img/icon_globe.png"></span>
+            </li>
+            <li class="service">
+              <p>Well Organized</p><span class="icon"><img src="img/icon_carrot.png"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="services-col bg-img">
+          <h2 class="services-header">Our Services</h2>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <h2 class="gallery-header">Gallery</h2>
+        <p class="gallery-paragraph">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="gallery-row">
+          <div class="col-8"><img class="photo" src="img/gal1.png"></div>
+          <div class="col-4"><img class="photo" src="img/gal2.png"><img class="photo" src="img/gal3.png"></div>
+        </div>
+        <div class="gallery-row">
+          <div class="col-6"><img class="photo" src="img/gal4.png"></div>
+          <div class="col-6"><img class="photo" src="img/gal5.png"></div>
+        </div>
+        <button class="btn gallery-btn">VIEW MORE</button>
+      </section>
+      <section class="subscribe" id="subscribe">
+        <div class="subscribe-col">
+          <h2 class="subscribe-header">Subscribe To Us</h2>
+          <p class="subscribe-paragraph">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Your email address...">
+            <button class="btn subscribe-btn" type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </section>
+      <section class="blog" id="blog">
+        <h2 class="blog-header">Blog</h2>
+        <p class="blog-paragraph">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        <div class="posts">
+          <div class="post" id="post-1"><span class="date">20 NOV</span>
+            <div class="gradient">
+              <h3 class="post-header">Green Smoothies: Too Much of a Good Thing?</h3>
+              <p class="author">By Auskeex - 2 hours ago</p>
+            </div>
+          </div>
+          <div class="post" id="post-2"><span class="date">14 NOV</span>
+            <div class="gradient">
+              <h3 class="post-header">Groving Food and a "Thirst" for Innovation</h3>
+              <p class="author">By Auskeex - 3 hours ago</p>
+            </div>
+          </div>
+          <div class="post" id="post-3"><span class="date">10 NOV</span>
+            <div class="gradient">
+              <h3 class="post-header">Pesticides and Food: What You Need to Know</h3>
+              <p class="author">By Auskeex - 6 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn blog-btn">VIEW MORE</button>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact-header">Contact</h2>
+        <p class="contact-paragraph">For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+        <div class="contact-row">
+          <form class="contact-form">
+            <input type="text" placeholder="Your name...">
+            <input type="email" placeholder="Your email...">
+            <input type="tel" placeholder="Your phone number...">
+            <textarea placeholder="Your message..."></textarea>
+          </form>
+          <address>
+            <h3>ADDRESS</h3>
+            <p>123 City name, Street, City, Country</p>
+            <h3>EMAIL</h3>
+            <p>cahee@domain.com</p>
+            <h3>PHONE</h3>
+            <p>+012 345 6789</p>
+          </address>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2015 Company. All Rights Reserved.</p>
+      <h4>Cahee</h4>
+      <p>Based on PSD by Auskteez</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
