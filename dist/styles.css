@@ -50,7 +50,10 @@ body {
   align-items: center; }
   .nav-menu li {
     margin: 0 20px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    border-top: 3px solid transparent; }
+    .nav-menu li:hover {
+      border-top: 3px solid #ff6033; }
     .nav-menu li a {
       font-size: 16px;
       font-weight: 700;
@@ -508,6 +511,8 @@ footer {
     font-size: 32px; }
   .nav-menu {
     display: none; }
+    .nav-menu li {
+      margin-bottom: 10px; }
   .nav-toggle {
     display: block;
     cursor: pointer; }
