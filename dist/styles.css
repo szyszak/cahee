@@ -49,16 +49,18 @@ body {
   -ms-flex-align: center;
   align-items: center; }
   .nav-menu li {
-    margin: 0 20px;
-    padding-top: 10px;
-    border-top: 3px solid transparent; }
-    .nav-menu li:hover {
-      border-top: 3px solid #ff6033; }
+    margin: 0 20px; }
     .nav-menu li a {
+      border-top: 3px solid transparent;
+      padding-top: 10px;
       font-size: 16px;
       font-weight: 700;
       text-decoration: none;
-      color: #262626; }
+      color: #262626;
+      -webkit-transition: 400ms;
+      transition: 400ms; }
+      .nav-menu li a:hover {
+        border-top: 3px solid #ff6033; }
   .nav-menu .active {
     border-top: 3px solid #ff6033; }
 
