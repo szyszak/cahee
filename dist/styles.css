@@ -10,7 +10,7 @@ body {
 .navbar {
   height: 100px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #f9f9fb;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -485,6 +485,22 @@ footer {
     font-size: 16px;
     font-weight: 300; }
 
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  to {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); } }
+
+@keyframes slide {
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  to {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); } }
+
 @media (max-width: 1440px) {
   .about-img {
     max-width: 100%; }
@@ -507,19 +523,19 @@ footer {
 
 @media (max-width: 992px) {
   .navbar {
-    height: 60px;
-    background-color: #ffffff; }
+    height: 60px; }
   .brand {
     font-size: 32px; }
   .nav-menu {
     display: none; }
     .nav-menu li {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      padding-bottom: 10px; }
   .nav-toggle {
     display: block;
     cursor: pointer; }
   .nav-open {
-    background-color: #ffffff;
+    background-color: #f9f9fb;
     width: 100vw;
     position: absolute;
     top: 100%;
@@ -536,7 +552,11 @@ footer {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -webkit-animation-name: slide;
+    animation-name: slide;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s; }
   .home {
     padding: 160px 0;
     background-position: center center; }

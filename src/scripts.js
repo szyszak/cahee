@@ -22,5 +22,6 @@ function setActiveClass() {
     link.classList.remove("active");
   }
 
+  navMenu.classList.remove("nav-open");
   this.classList.add("active");
 };
