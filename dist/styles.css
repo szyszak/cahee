@@ -565,7 +565,10 @@ footer {
     .home .scroll {
       display: none; }
   .about {
-    padding: 100px; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
     .about .about-col {
       margin: 0 20px; } }
 
@@ -599,11 +602,6 @@ footer {
 @media (max-width: 570px) {
   .home {
     background-position: 40% center; }
-  .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
   .services {
     padding: 0;
     padding-bottom: 50px; }
