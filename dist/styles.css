@@ -557,6 +557,8 @@ footer {
     animation-name: slide;
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s; }
+    .nav-open li a {
+      padding-top: 3px; }
   .home {
     padding: 160px 0;
     background-position: center center; }
