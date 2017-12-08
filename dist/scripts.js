@@ -7,17 +7,13 @@ menuTrigger.addEventListener("click", () => {
   navMenu.classList.toggle("nav-open");
 });
 
-function cl(text) {
-  console.log(text);
-};
-
 const links = document.querySelectorAll(".nav-menu li a");
 
 for (let i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", setActiveClass);
+  links[i].addEventListener("click", clickHandler);
 };
 
-function setActiveClass() {
+function clickHandler() {
   for (let link of links) {
     link.classList.remove("active");
   }
