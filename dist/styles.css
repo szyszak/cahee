@@ -59,7 +59,8 @@ body {
       text-decoration: none;
       color: #262626;
       -webkit-transition: 400ms;
-      transition: 400ms; }
+      transition: 400ms;
+      outline: none; }
       .nav-menu li a:hover {
         border-top: 3px solid #ff6033; }
   .nav-menu .active {
